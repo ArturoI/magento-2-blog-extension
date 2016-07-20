@@ -44,6 +44,10 @@ h2.mp-post-title a:hover:focus {
 }
 .post-info-wraper h2.mp-post-title{
     margin-top: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #1abc9c;
 }
 .post-list-item {
     margin-bottom: 40px;
@@ -168,4 +172,10 @@ a.mp-relate-link img.img-responsive{
 }
 .owl-item{
     width:246px !important;
+}
+.owl-stage-outer {
+    height: 220px;
+}
+.owl-carousel .owl-stage {
+    height: 220px;
 }
