@@ -113,7 +113,7 @@ class Save extends \Mageplaza\Blog\Controller\Adminhtml\Category
 
             try {
                 $category->save();
-                $this->messageManager->addSuccess(__('You saved the Category.'));
+                $this->messageManager->addSuccess(__('You saved the Faqcat.'));
                 $refreshTree = true;
             } catch (\Exception $e) {
                 $this->messageManager->addError($e->getMessage());
@@ -123,7 +123,7 @@ class Save extends \Mageplaza\Blog\Controller\Adminhtml\Category
 
             if ($this->getRequest()->getPost('return_session_messages_only')) {
                 $category->load($category->getId());
-                // to obtain truncated Category Name
+                // to obtain truncated Faqcat Name
                 /** @var $block \Magento\Framework\View\Element\Messages */
                 $block = $this->layoutFactory->create()->getMessagesBlock();
                 $block->setMessages($this->messageManager->getMessages(true));

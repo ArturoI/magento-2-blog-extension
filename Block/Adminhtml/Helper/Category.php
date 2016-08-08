@@ -118,7 +118,7 @@ class Category extends \Magento\Framework\Data\Form\Element\Multiselect
     }
 
     /**
-     * Get Category collection
+     * Get Faqcat collection
      *
      * @return \Mageplaza\Blog\Model\ResourceModel\Category\Collection
      */
@@ -128,16 +128,16 @@ class Category extends \Magento\Framework\Data\Form\Element\Multiselect
     }
 
     /**
-     * Attach Category suggest widget initialization
+     * Attach Faqcat suggest widget initialization
      *
      * @return string
      */
     public function getAfterElementHtml()
     {
         $htmlId = $this->getHtmlId();
-        $suggestPlaceholder = __('start typing to search Category');
+        $suggestPlaceholder = __('start typing to search Faqcat');
         $selectorOptions = $this->jsonEncoder->encode($this->getSelectorOptions());
-        $newCategoryCaption = __('New Category');
+        $newCategoryCaption = __('New Faqcat');
         /** @var \Magento\Backend\Block\Widget\Button $button */
         $button = $this->layout->createBlock('Magento\Backend\Block\Widget\Button')
             ->setData([

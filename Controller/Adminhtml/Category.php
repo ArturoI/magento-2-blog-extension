@@ -18,7 +18,7 @@ namespace Mageplaza\Blog\Controller\Adminhtml;
 abstract class Category extends \Magento\Backend\App\Action
 {
     /**
-     * Category Factory
+     * Faqcat Factory
      * 
      * @var \Mageplaza\Blog\Model\CategoryFactory
      */
@@ -60,7 +60,7 @@ abstract class Category extends \Magento\Backend\App\Action
     }
 
     /**
-     * Init Category
+     * Init Faqcat
      *
      * @return \Mageplaza\Blog\Model\Category
      */

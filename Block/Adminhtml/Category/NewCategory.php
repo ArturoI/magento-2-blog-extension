@@ -29,7 +29,7 @@ class NewCategory extends \Magento\Backend\Block\Widget\Form\Generic
     protected $jsonEncoder;
 
     /**
-     * Category collection factory
+     * Faqcat collection factory
      * 
      * @var \Mageplaza\Blog\Model\ResourceModel\Category\CollectionFactory
      */
@@ -97,15 +97,15 @@ class NewCategory extends \Magento\Backend\Block\Widget\Form\Generic
             'new_category_parent',
             'select',
             [
-                'label' => __('Parent Category'),
-                'title' => __('Parent Category'),
+                'label' => __('Parent Faqcat'),
+                'title' => __('Parent Faqcat'),
                 'required' => false,
                 'options' => $this->getParentCategoryOptions(),
                 'class' => 'validate-parent-category',
                 'name' => 'new_category_parent',
                 // @codingStandardsIgnoreStart
                 'note' => __(
-                        'You can reassign the Category at any time in ' .
+                        'You can reassign the Faqcat at any time in ' .
                         '<a href="%1" target="_blank">Manage Categories</a>.',
                     $this->getUrl('mageplaza_blog/category')
                 )
@@ -117,7 +117,7 @@ class NewCategory extends \Magento\Backend\Block\Widget\Form\Generic
     }
 
     /**
-     * Get parent Category options
+     * Get parent Faqcat options
      *
      * @return array
      */
@@ -137,7 +137,7 @@ class NewCategory extends \Magento\Backend\Block\Widget\Form\Generic
     }
 
     /**
-     * Category save action URL
+     * Faqcat save action URL
      *
      * @return string
      */
@@ -147,7 +147,7 @@ class NewCategory extends \Magento\Backend\Block\Widget\Form\Generic
     }
 
     /**
-     * Attach new Category dialog widget initialization
+     * Attach new Faqcat dialog widget initialization
      *
      * @return string
      */

@@ -80,7 +80,7 @@ class Category extends \Magento\Backend\Block\Widget\Form\Generic implements \Ma
         $fieldset = $form->addFieldset(
             'base_fieldset',
             [
-                'legend' => __('Category Information'),
+                'legend' => __('Faqcat Information'),
                 'class'  => 'fieldset-wide'
             ]
         );
@@ -204,7 +204,7 @@ class Category extends \Magento\Backend\Block\Widget\Form\Generic implements \Ma
      */
     public function getTabLabel()
     {
-        return __('Category');
+        return __('Faqcat');
     }
 
     /**

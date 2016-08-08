@@ -67,7 +67,7 @@ class Edit extends \Mageplaza\Blog\Controller\Adminhtml\Category
 
 
     /**
-     * Edit Category page
+     * Edit Faqcat page
      *
      * @return \Magento\Framework\Controller\ResultInterface
      * @SuppressWarnings(PHPMD.CyclomaticComplexity)
@@ -86,7 +86,7 @@ class Edit extends \Mageplaza\Blog\Controller\Adminhtml\Category
         }
 
         /**
-         * Check if we have data in session (if during Category save was exception)
+         * Check if we have data in session (if during Faqcat save was exception)
          */
         $data = $this->_getSession()->getMageplazaBlogCategoryData(true);
         if (isset($data['category'])) {
@@ -99,10 +99,10 @@ class Edit extends \Mageplaza\Blog\Controller\Adminhtml\Category
          * Build response for ajax request
          */
         if ($this->getRequest()->getQuery('isAjax')) {
-            // prepare breadcrumbs of selected Category, if any
+            // prepare breadcrumbs of selected Faqcat, if any
             $breadcrumbsPath = $category->getPath();
             if (empty($breadcrumbsPath)) {
-                // but if no Category, and it is deleted - prepare breadcrumbs from path, saved in session
+                // but if no Faqcat, and it is deleted - prepare breadcrumbs from path, saved in session
                 //TODO: inject session instead of using objectManager
                 $breadcrumbsPath = $this->_objectManager->get(
                     'Magento\Backend\Model\Auth\Session'
@@ -111,7 +111,7 @@ class Edit extends \Mageplaza\Blog\Controller\Adminhtml\Category
                     );
                 if (!empty($breadcrumbsPath)) {
                     $breadcrumbsPath = explode('/', $breadcrumbsPath);
-                    // no need to get parent breadcrumbs if deleting Category level 1
+                    // no need to get parent breadcrumbs if deleting Faqcat level 1
                     if (count($breadcrumbsPath) <= 1) {
                         $breadcrumbsPath = '';
                     } else {

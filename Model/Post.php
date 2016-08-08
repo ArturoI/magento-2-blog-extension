@@ -103,7 +103,7 @@ class Post extends \Magento\Framework\Model\AbstractModel
 	protected $topicCollection;
 
 	/**
-	 * Category Collection
+	 * Faqcat Collection
 	 *
 	 * @var \Mageplaza\Blog\Model\ResourceModel\Category\Collection
 	 */
@@ -124,7 +124,7 @@ class Post extends \Magento\Framework\Model\AbstractModel
 	protected $topicCollectionFactory;
 
 	/**
-	 * Category Collection Factory
+	 * Faqcat Collection Factory
 	 *
 	 * @var \Mageplaza\Blog\Model\ResourceModel\Category\CollectionFactory
 	 */

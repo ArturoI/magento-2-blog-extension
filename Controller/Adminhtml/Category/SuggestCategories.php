@@ -56,7 +56,7 @@ class SuggestCategories extends \Mageplaza\Blog\Controller\Adminhtml\Category
     }
 
     /**
-     * Category list suggestion based on already entered symbols
+     * Faqcat list suggestion based on already entered symbols
      *
      * @return \Magento\Framework\Controller\Result\Json
      */

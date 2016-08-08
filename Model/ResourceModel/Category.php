@@ -69,7 +69,7 @@ class Category extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
     }
 
     /**
-     * Retrieves Category Name from DB by passed id.
+     * Retrieves Faqcat Name from DB by passed id.
      *
      * @param string $id
      * @return string|bool
@@ -295,7 +295,7 @@ class Category extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
         $pathField = $adapter->quoteIdentifier('path');
 
         /**
-         * Decrease children count for all old Category parent Categories
+         * Decrease children count for all old Faqcat parent Categories
          */
         $adapter->update(
             $table,
@@ -304,7 +304,7 @@ class Category extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
         );
 
         /**
-         * Increase children count for new Category parents
+         * Increase children count for new Faqcat parents
          */
         $adapter->update(
             $table,
@@ -336,7 +336,7 @@ class Category extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
             [$pathField . ' LIKE ?' => $category->getPath() . '/%']
         );
         /**
-         * Update moved Category data
+         * Update moved Faqcat data
          */
         $data = [
             'path' => $newPath,
@@ -346,7 +346,7 @@ class Category extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
         ];
         $adapter->update($table, $data, ['category_id = ?' => $category->getId()]);
 
-        // Update Category object to new data
+        // Update Faqcat object to new data
         $category->addData($data);
         $category->unsetData('path_ids');
 

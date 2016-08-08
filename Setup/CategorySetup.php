@@ -25,7 +25,7 @@ class CategorySetup
     protected $setup;
 
     /**
-     * Category Factory
+     * Faqcat Factory
      * 
      * @var \Mageplaza\Blog\Model\CategoryFactory
      */
@@ -48,7 +48,7 @@ class CategorySetup
 
 
     /**
-     * Creates Category model
+     * Creates Faqcat model
      *
      * @param array $data
      * @return \Mageplaza\Blog\Model\Category

@@ -4,8 +4,8 @@ $postsRecent = $block->getRecentPost();
 ?>
 <div class="mp-sidebar mpcss">
 		<ul class="nav nav-tabs">
-			<li class="active"><a data-toggle="tab" href="#mostview"><?php echo __('Popular') ?></a></li>
-			<li><a data-toggle="tab" href="#mostrecent"><?php echo __('Recent') ?></a></li>
+			<li class="active"><a id="popular-tab" data-toggle="tab" href="#mostview"><?php echo __('Popular') ?></a></li>
+			<li><a id="recent-tab" data-toggle="tab" href="#mostrecent"><?php echo __('Recent') ?></a></li>
 		</ul>
 		
 		<div class="tab-content">
@@ -56,3 +56,15 @@ $postsRecent = $block->getRecentPost();
 			</div>
 		</div>
 </div>
+<script>
+//	jQuery.noConflict();
+//
+//	jQuery(document).ready(function () {
+//		jQuery("#popular-tab").click(function () {
+//			jQuery("#recent-tab").css("display", "block");
+//		});
+//		jQuery("#recent-tab").click(function () {
+//			jQuery("#popular-tab").css("display", "block");
+//		});
+//	})
+</script>

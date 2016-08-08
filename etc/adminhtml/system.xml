@@ -82,7 +82,7 @@
                 </field>
                 <field id="font_color" translate="label comment" type="text" sortOrder="60" showInWebsite="1" showInStore="1" showInDefault="1">
                     <label>Choose blog's color</label>
-                    <comment>Type color code. Eg: #1abc9c, #1979c3...</comment>
+                    <validate>jscolor {hash:true,refine:false}</validate>
                 </field>
                 <field id="display_author" translate="label comment" type="select" sortOrder="70" showInWebsite="1" showInStore="1" showInDefault="1">
                     <label>Display author in blog</label>

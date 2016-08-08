@@ -70,7 +70,7 @@ class Form extends \Mageplaza\Blog\Block\Adminhtml\Category\AbstractCategory
     {
         $category   = $this->getCategory();
         $categoryId = (int)$category->getId();
-        // 0 when we create Category, otherwise some value for editing Category
+        // 0 when we create Faqcat, otherwise some value for editing Faqcat
 
         $this->setChild(
             'tabs',
@@ -82,7 +82,7 @@ class Form extends \Mageplaza\Blog\Block\Adminhtml\Category\AbstractCategory
             'save',
             [
                 'id' => 'save',
-                'label' => __('Save Category'),
+                'label' => __('Save Faqcat'),
                 'class' => 'save primary save-category',
                 'data_attribute' => [
                     'mage-init' => [
@@ -101,7 +101,7 @@ class Form extends \Mageplaza\Blog\Block\Adminhtml\Category\AbstractCategory
                 'delete',
                 [
                     'id' => 'delete',
-                    'label' => __('Delete Category'),
+                    'label' => __('Delete Faqcat'),
                     'onclick' => "categoryDelete('" . $this->getUrl(
                         'mageplaza_blog/*/delete',
                         ['_current' => true]
@@ -199,9 +199,9 @@ class Form extends \Mageplaza\Blog\Block\Adminhtml\Category\AbstractCategory
         } else {
             $parentId = (int)$this->getRequest()->getParam('parent');
             if ($parentId && $parentId != \Mageplaza\Blog\Model\Category::TREE_ROOT_ID) {
-                return __('New Child Category');
+                return __('New Child Faqcat');
             } else {
-                return __('New Root Category');
+                return __('New Root Faqcat');
             }
         }
     }
@@ -239,7 +239,7 @@ class Form extends \Mageplaza\Blog\Block\Adminhtml\Category\AbstractCategory
     }
 
     /**
-     * Get parent Category id
+     * Get parent Faqcat id
      *
      * @return int
      */
@@ -249,7 +249,7 @@ class Form extends \Mageplaza\Blog\Block\Adminhtml\Category\AbstractCategory
     }
 
     /**
-     * Get Category  id
+     * Get Faqcat  id
      *
      * @return int
      */

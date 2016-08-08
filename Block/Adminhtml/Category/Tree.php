@@ -102,7 +102,7 @@ class Tree extends \Mageplaza\Blog\Block\Adminhtml\Category\AbstractCategory
             'add_sub_button',
             'Magento\Backend\Block\Widget\Button',
             [
-                'label' => __('Add Child Category'),
+                'label' => __('Add Child Faqcat'),
                 'onclick' => "addNew('" . $addUrl . "', false)",
                 'class' => 'add',
                 'id' => 'add_child_category_button',
@@ -115,7 +115,7 @@ class Tree extends \Mageplaza\Blog\Block\Adminhtml\Category\AbstractCategory
                 'add_root_button',
                 'Magento\Backend\Block\Widget\Button',
                 [
-                    'label' => __('Add Root Category'),
+                    'label' => __('Add Root Faqcat'),
                     'onclick' => "addNew('" . $addUrl . "', true)",
                     'class' => 'add',
                     'id' => 'add_root_category_button'
@@ -287,7 +287,7 @@ class Tree extends \Mageplaza\Blog\Block\Adminhtml\Category\AbstractCategory
     }
 
     /**
-     * Get JSON of array of Categories, that are breadcrumbs for specified Category path
+     * Get JSON of array of Categories, that are breadcrumbs for specified Faqcat path
      *
      * @param string $path
      * @param string $javascriptVarName
@@ -364,7 +364,7 @@ class Tree extends \Mageplaza\Blog\Block\Adminhtml\Category\AbstractCategory
     }
 
     /**
-     * Get Category Name
+     * Get Faqcat Name
      *
      * @param \Magento\Framework\DataObject $node
      * @return string
@@ -403,7 +403,7 @@ class Tree extends \Mageplaza\Blog\Block\Adminhtml\Category\AbstractCategory
     }
 
     /**
-     * Check if page loaded by outside link to Category edit
+     * Check if page loaded by outside link to Faqcat edit
      *
      * @return boolean
      */
@@ -413,7 +413,7 @@ class Tree extends \Mageplaza\Blog\Block\Adminhtml\Category\AbstractCategory
     }
 
     /**
-     * Check availability of adding root Category
+     * Check availability of adding root Faqcat
      *
      * @return boolean
      */
@@ -429,7 +429,7 @@ class Tree extends \Mageplaza\Blog\Block\Adminhtml\Category\AbstractCategory
     }
 
     /**
-     * Check availability of adding child Category
+     * Check availability of adding child Faqcat
      *
      * @return boolean
      */

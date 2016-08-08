@@ -352,98 +352,98 @@ class InstallSchema implements \Magento\Framework\Setup\InstallSchemaInterface
                     'primary'  => true,
                     'unsigned' => true,
                 ],
-                'Category ID'
+                'Faqcat ID'
             )
             ->addColumn(
                 'name',
                 \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
                 255,
                 ['nullable => false'],
-                'Category Name'
+                'Faqcat Name'
             )
             ->addColumn(
                 'description',
                 \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
                 '64k',
                 [],
-                'Category Description'
+                'Faqcat Description'
             )
             ->addColumn(
                 'url_key',
                 \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
                 255,
                 [],
-                'Category URL Key'
+                'Faqcat URL Key'
             )
             ->addColumn(
                 'enabled',
                 \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
                 1,
                 [],
-                'Category Enabled'
+                'Faqcat Enabled'
             )
             ->addColumn(
                 'meta_title',
                 \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
                 255,
                 [],
-                'Category Meta Title'
+                'Faqcat Meta Title'
             )
             ->addColumn(
                 'meta_description',
                 \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
                 '64k',
                 [],
-                'Category Meta Description'
+                'Faqcat Meta Description'
             )
             ->addColumn(
                 'meta_keywords',
                 \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
                 '64k',
                 [],
-                'Category Meta Keywords'
+                'Faqcat Meta Keywords'
             )
             ->addColumn(
                 'meta_robots',
                 \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
                 null,
                 [],
-                'Category Meta Robots'
+                'Faqcat Meta Robots'
             )
             ->addColumn(
                 'parent_id',
                 \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
                 null,
                 [],
-                'Category Parent Id'
+                'Faqcat Parent Id'
             )
             ->addColumn(
                 'path',
                 \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
                 255,
                 [],
-                'Category Path'
+                'Faqcat Path'
             )
             ->addColumn(
                 'position',
                 \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
                 null,
                 [],
-                'Category Position'
+                'Faqcat Position'
             )
             ->addColumn(
                 'level',
                 \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
                 null,
                 [],
-                'Category Level'
+                'Faqcat Level'
             )
             ->addColumn(
                 'children_count',
                 \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
                 null,
                 [],
-                'Category Children Count'
+                'Faqcat Children Count'
             )
 
             ->addColumn(
@@ -451,16 +451,16 @@ class InstallSchema implements \Magento\Framework\Setup\InstallSchemaInterface
                 \Magento\Framework\DB\Ddl\Table::TYPE_TIMESTAMP,
                 null,
                 [],
-                'Category Created At'
+                'Faqcat Created At'
             )
             ->addColumn(
                 'updated_at',
                 \Magento\Framework\DB\Ddl\Table::TYPE_TIMESTAMP,
                 null,
                 [],
-                'Category Updated At'
+                'Faqcat Updated At'
             )
-            ->setComment('Category Table');
+            ->setComment('Faqcat Table');
             $installer->getConnection()->createTable($table);
 
             $installer->getConnection()->addIndex(
@@ -664,7 +664,7 @@ class InstallSchema implements \Magento\Framework\Setup\InstallSchemaInterface
                     'nullable' => false,
                     'primary'   => true,
                 ],
-                'Category ID'
+                'Faqcat ID'
             )
             ->addColumn(
                 'post_id',
@@ -738,7 +738,7 @@ class InstallSchema implements \Magento\Framework\Setup\InstallSchemaInterface
                     'type' => \Magento\Framework\DB\Adapter\AdapterInterface::INDEX_TYPE_UNIQUE
                 ]
             )
-            ->setComment('Category To Post Link Table');
+            ->setComment('Faqcat To Post Link Table');
             $installer->getConnection()->createTable($table);
         }
         $installer->endSetup();

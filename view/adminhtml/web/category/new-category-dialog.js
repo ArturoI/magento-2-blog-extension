@@ -36,7 +36,7 @@ define([
             var widget = this;
             $('#new_category_parent').before($('<input>', {
                 id: 'new_category_parent-suggest',
-                placeholder: $.mage.__('start typing to search Category')
+                placeholder: $.mage.__('start typing to search Faqcat')
             }));
 
             $('#new_category_parent-suggest').treeSuggest(this.options.suggestOptions)
@@ -48,7 +48,7 @@ define([
 
             $.validator.addMethod('validate-parent-category', function () {
                 return $('#new_category_parent').val() || $('#new_category_parent-suggest').val() === '';
-            }, $.mage.__('Choose existing Category.'));
+            }, $.mage.__('Choose existing Faqcat.'));
             var newCategoryForm = $('#new_category_form');
             newCategoryForm.mage('validation', {
                 errorPlacement: function (error, element) {
@@ -66,7 +66,7 @@ define([
             this.element.modal({
                 type: 'slide',
                 modalClass: 'mage-new-category-dialog form-inline',
-                title: $.mage.__('Create Category'),
+                title: $.mage.__('Create Faqcat'),
                 opened: function () {
                     var enteredName = $('#category_ids-suggest').val();
 
@@ -86,7 +86,7 @@ define([
                     $('#category_ids-suggest').focus();
                 },
                 buttons: [{
-                    text: $.mage.__('Create Category'),
+                    text: $.mage.__('Create Faqcat'),
                     class: 'action-primary',
                     click: function (e) {
                         if (!newCategoryForm.valid()) {

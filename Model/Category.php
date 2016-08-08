@@ -56,7 +56,7 @@ namespace Mageplaza\Blog\Model;
 class Category extends \Magento\Framework\Model\AbstractModel
 {
     /**
-     * Root of the Category tree
+     * Root of the Faqcat tree
      * 
      * @var string
      */
@@ -91,7 +91,7 @@ class Category extends \Magento\Framework\Model\AbstractModel
     protected $postCollection;
 
     /**
-     * Category Factory
+     * Faqcat Factory
      * 
      * @var \Mageplaza\Blog\Model\CategoryFactory
      */
@@ -189,7 +189,7 @@ class Category extends \Magento\Framework\Model\AbstractModel
     }
 
     /**
-     * move Category in tree
+     * move Faqcat in tree
      * 
      * @param $parentId
      * @param $afterCategoryId
@@ -203,19 +203,19 @@ class Category extends \Magento\Framework\Model\AbstractModel
             $parent = $this->categoryFactory->create()->load($parentId);
         } catch (\Magento\Framework\Exception\NoSuchEntityException $e) {
             throw new \Magento\Framework\Exception\LocalizedException(
-                __('Sorry, but we can\'t move the Category because we can\'t find the new parent Category you selected.'),
+                __('Sorry, but we can\'t move the Faqcat because we can\'t find the new parent Faqcat you selected.'),
                 $e
             );
         }
 
         if (!$this->getId()) {
             throw new \Magento\Framework\Exception\LocalizedException(
-                __('Sorry, but we can\'t move the Category because we can\'t find the new parent Category you selected.')
+                __('Sorry, but we can\'t move the Faqcat because we can\'t find the new parent Faqcat you selected.')
             );
         } elseif ($parent->getId() == $this->getId()) {
             throw new \Magento\Framework\Exception\LocalizedException(
                 __(
-                    'We can\'t perform this Category move operation because the parent Category matches the child Category.'
+                    'We can\'t perform this Faqcat move operation because the parent Faqcat matches the child Faqcat.'
                 )
             );
         }

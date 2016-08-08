@@ -25,21 +25,21 @@ class AbstractCategory extends \Magento\Backend\Block\Template
     protected $coreRegistry;
 
     /**
-     * Category tree model instance
+     * Faqcat tree model instance
      * 
      * @var \Mageplaza\Blog\Model\ResourceModel\Category\Tree
      */
     protected $categoryTree;
 
     /**
-     * Category factory
+     * Faqcat factory
      * 
      * @var \Mageplaza\Blog\Model\CategoryFactory
      */
     protected $categoryFactory;
 
     /**
-     * Category collection factory
+     * Faqcat collection factory
      * 
      * @var \Mageplaza\Blog\Model\ResourceModel\Category\CollectionFactory
      */
@@ -72,7 +72,7 @@ class AbstractCategory extends \Magento\Backend\Block\Template
     }
 
     /**
-     * Retrieve current Category instance
+     * Retrieve current Faqcat instance
      *
      * @return \Mageplaza\Blog\Model\Category
      */

@@ -60,7 +60,7 @@ class Tree extends \Magento\Framework\Data\Tree\Dbp
     protected $collectionFactory;
 
     /**
-     * Category Resource instance
+     * Faqcat Resource instance
      * 
      * @var \Mageplaza\Blog\Model\ResourceModel\Category
      */
@@ -88,14 +88,14 @@ class Tree extends \Magento\Framework\Data\Tree\Dbp
     protected $coreResource;
 
     /**
-     * Category Collection
+     * Faqcat Collection
      * 
      * @var \Mageplaza\Blog\Model\ResourceModel\Category\Collection
      */
     protected $collection;
 
     /**
-     * Inactive Category Ids
+     * Inactive Faqcat Ids
      * 
      * @var array
      */
@@ -244,7 +244,7 @@ class Tree extends \Magento\Framework\Data\Tree\Dbp
     }
 
     /**
-     * Return disable Category ids
+     * Return disable Faqcat ids
      *
      * @param Collection $collection
      * @param array $allIds
@@ -257,7 +257,7 @@ class Tree extends \Magento\Framework\Data\Tree\Dbp
     }
 
     /**
-     * Retrieve inactive Category item ids
+     * Retrieve inactive Faqcat item ids
      *
      * @param Collection $collection
      * @param int $storeId
@@ -270,7 +270,7 @@ class Tree extends \Magento\Framework\Data\Tree\Dbp
     }
 
     /**
-     * Check is Category items active
+     * Check is Faqcat items active
      *
      * @param int $id
      * @return boolean
@@ -376,7 +376,7 @@ class Tree extends \Magento\Framework\Data\Tree\Dbp
     }
 
     /**
-     * Load whole Category tree, that will include specified Categories ids.
+     * Load whole Faqcat tree, that will include specified Categories ids.
      *
      * @param array $ids
      * @param bool $addCollectionData
@@ -510,7 +510,7 @@ class Tree extends \Magento\Framework\Data\Tree\Dbp
     }
 
     /**
-     * Get real existing Category ids by specified ids
+     * Get real existing Faqcat ids by specified ids
      *
      * @param array $ids
      * @return array

@@ -46,7 +46,7 @@ class Post extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
 	protected $postTopicTable;
 
 	/**
-	 * Category relation model
+	 * Faqcat relation model
 	 *
 	 * @var string
 	 */
