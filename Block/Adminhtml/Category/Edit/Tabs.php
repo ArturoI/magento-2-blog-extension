@@ -66,7 +66,7 @@ class Tabs extends \Magento\Backend\Block\Widget\Tabs
         parent::_construct();
         $this->setId('category_info_tabs');
         $this->setDestElementId('category_tab_content');
-        $this->setTitle(__('Faqcat Data'));
+        $this->setTitle(__('Category Data'));
     }
 
     /**
@@ -91,7 +91,7 @@ class Tabs extends \Magento\Backend\Block\Widget\Tabs
         $this->addTab(
             'category',
             [
-                'label' => __('Faqcat information'),
+                'label' => __('Category information'),
                 'content' => $this->getLayout()->createBlock(
                     'Mageplaza\Blog\Block\Adminhtml\Category\Edit\Tab\Category',
                     'mageplaza_blog_category_edit_tab_category'

@@ -97,15 +97,15 @@ class NewCategory extends \Magento\Backend\Block\Widget\Form\Generic
             'new_category_parent',
             'select',
             [
-                'label' => __('Parent Faqcat'),
-                'title' => __('Parent Faqcat'),
+                'label' => __('Parent Category'),
+                'title' => __('Parent Category'),
                 'required' => false,
                 'options' => $this->getParentCategoryOptions(),
                 'class' => 'validate-parent-category',
                 'name' => 'new_category_parent',
                 // @codingStandardsIgnoreStart
                 'note' => __(
-                        'You can reassign the Faqcat at any time in ' .
+                        'You can reassign the Category at any time in ' .
                         '<a href="%1" target="_blank">Manage Categories</a>.',
                     $this->getUrl('mageplaza_blog/category')
                 )

@@ -102,7 +102,7 @@ class Tree extends \Mageplaza\Blog\Block\Adminhtml\Category\AbstractCategory
             'add_sub_button',
             'Magento\Backend\Block\Widget\Button',
             [
-                'label' => __('Add Child Faqcat'),
+                'label' => __('Add Child Category'),
                 'onclick' => "addNew('" . $addUrl . "', false)",
                 'class' => 'add',
                 'id' => 'add_child_category_button',
@@ -115,7 +115,7 @@ class Tree extends \Mageplaza\Blog\Block\Adminhtml\Category\AbstractCategory
                 'add_root_button',
                 'Magento\Backend\Block\Widget\Button',
                 [
-                    'label' => __('Add Root Faqcat'),
+                    'label' => __('Add Root Category'),
                     'onclick' => "addNew('" . $addUrl . "', true)",
                     'class' => 'add',
                     'id' => 'add_root_category_button'

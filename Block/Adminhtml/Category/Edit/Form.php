@@ -82,7 +82,7 @@ class Form extends \Mageplaza\Blog\Block\Adminhtml\Category\AbstractCategory
             'save',
             [
                 'id' => 'save',
-                'label' => __('Save Faqcat'),
+                'label' => __('Save Category'),
                 'class' => 'save primary save-category',
                 'data_attribute' => [
                     'mage-init' => [
@@ -101,7 +101,7 @@ class Form extends \Mageplaza\Blog\Block\Adminhtml\Category\AbstractCategory
                 'delete',
                 [
                     'id' => 'delete',
-                    'label' => __('Delete Faqcat'),
+                    'label' => __('Delete Category'),
                     'onclick' => "categoryDelete('" . $this->getUrl(
                         'mageplaza_blog/*/delete',
                         ['_current' => true]
@@ -199,9 +199,9 @@ class Form extends \Mageplaza\Blog\Block\Adminhtml\Category\AbstractCategory
         } else {
             $parentId = (int)$this->getRequest()->getParam('parent');
             if ($parentId && $parentId != \Mageplaza\Blog\Model\Category::TREE_ROOT_ID) {
-                return __('New Child Faqcat');
+                return __('New Child Category');
             } else {
-                return __('New Root Faqcat');
+                return __('New Root Category');
             }
         }
     }
